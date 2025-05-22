@@ -39,7 +39,7 @@ app.post('/produtos', (req, res) => {
         () => {
             res.status(201).send('Produto cadastrado com sucesso!')
         }
-    );
+        });
     
 
 })
@@ -50,7 +50,6 @@ app.get('/produtos', (req, res) => {
             return res.status(500).send('Erro ao buscar produtos');
         }
 
-    res.status(200).send(results)
     });
 });
 
